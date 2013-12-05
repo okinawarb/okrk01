@@ -1,11 +1,33 @@
 okrk01
 ======
-Okinawa ruby kaigiのページになる予定のレポジトリです
+[沖縄Ruby会議01](https://okinawarb.github.io/okrk01/)のレポジトリです。
 
-`bundle exec middleman server`
+## 実行
+```
+bundle install
+bundle exec middleman server
+```
 
+## 手動デプロイ
+```
+bundle install
+bundle exec middleman build
+bundle exec middleman deploy
+```
 
-これ参考に
+## 自動デプロイ
+
+```
+# e.g. /source 以下のHTML/CSSファイル等を変更する。
+git add -A
+git commit -m "デザインを修正"
+git push origin master
+# GitHub -> Travis -> GitHub Pages という流れでデプロイされます。
+```
+
+## 参考リポジトリ
 
 [http://github.com/chuork/chuork01](http://github.com/chuork/chuork01)
+
+
 

@@ -1,0 +1,22 @@
+language: ruby
+rvm: 2.0.0
+env:
+  global:
+    - GIT_COMMITTER_NAME=yasulab
+    - GIT_COMMITTER_EMAIL=yasulab@gmail.com
+    - GIT_AUTHOR_NAME=Yohei YASUKAWA
+    - GIT_AUTHOR_EMAIL=yasulab@gmail.com
+    - secure: "ipOcPZ7Bct6zAdI87/9GvC6zY8n462TYZbWfWEKasANuLcCM1OOQKOIXsRRmwr1teuEJb4LWsMZDMJnmgNDW6fVTFmxXIJcozxkqHrqi3D7qCDZu5CsyrtvRjCTmre1kQGOGGYG22GtpkDcQSSkUJJLsfQ9H/VmtMe04SrRveS4="
+before_script:
+    - git clone --quiet https://github.com/okinawarb/okrk01.git build
+    - pushd build
+    - git checkout -b gh-pages
+    - popd
+script:
+    - bundle exec middleman build
+after_success:
+    - cd build
+    - git add -A
+    - git commit -m 'Update'
+    - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/okinawarb/okrk01.git gh-pages 2> /dev/null'
+

@@ -13,5 +13,13 @@
 # Ignore Sass' cache
 /.sass-cache
 
-# Ignore .DS_store file
+# Ignore buffer files
+.dropbox
+Icon
+*.swp
+*.pdf
+*~
+*.pyc
+*#
+*.out
 .DS_Store

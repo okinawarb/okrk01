@@ -8,23 +8,19 @@ bundle install
 bundle exec middleman server
 ```
 
-## 手動デプロイ
-```
-bundle install
-bundle exec middleman build
-bundle exec middleman deploy
-```
-
-## 自動デプロイ
+## デプロイ方法
 
 ```
 # e.g. /source 以下のHTML/CSSファイル等を変更する。
 git add -A
 git commit -m "デザインを修正"
 git push origin master
-# GitHub -> Travis -> GitHub Pages という流れでデプロイされます。
+# GitHub -> Travis -> GitHub Pages という流れで自動的にデプロイされます。
 ```
 
+- cf. [okinawarb/okrk01- Travis CI](https://travis-ci.org/okinawarb/okrk01)
+
+## デプ
 ## 参考リポジトリ
 
 [http://github.com/chuork/chuork01](http://github.com/chuork/chuork01)

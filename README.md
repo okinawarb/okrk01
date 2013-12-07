@@ -20,7 +20,6 @@ git push origin master
 
 - cf. [okinawarb/okrk01- Travis CI](https://travis-ci.org/okinawarb/okrk01)
 
-## デプ
 ## 参考リポジトリ
 
 [http://github.com/chuork/chuork01](http://github.com/chuork/chuork01)

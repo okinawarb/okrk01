@@ -8,6 +8,9 @@ bundle install
 bundle exec middleman server
 ```
 
+ハロー
+フォークのし直しなしでできます・・・
+
 ## デプロイ方法
 
 ```

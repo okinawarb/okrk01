@@ -1,6 +1,6 @@
 okrk01
 ======
-[沖縄Ruby会議01](https://okinawarb.github.io/okrk01/)のレポジトリです。
+[沖縄Ruby会議01](http://regional.rubykaigi.org/okrk01/)のレポジトリです。
 
 ## 概要
 

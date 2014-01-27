@@ -135,10 +135,12 @@ body {
 .contents ul li,.contents2 ul li,.contents3 ul li{
     margin-left:30px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
-.contents ol li,.contents2 0l li,.contents3 ol li{
+.contents ol li,.contents2 ol li,.contents3 ol li{
     margin-left:30px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .contents h2,.contents2 h2,.contents3 h2{
     font-size: 120%;

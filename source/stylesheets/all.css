@@ -1,3 +1,235 @@
-/*
-*= require_tree ./bootstrap
-*/
+@charset "UTF-8";
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+	color: #666666;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+
+body {
+  background-color: #ffe;
+  font-family: "メイリオ","Meiryo","ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+  padding: 0px;
+  margin: 0px;
+  font-size: 100%;
+  color: #111;
+  border-top:5px solid #2c3e50;
+}
+.wrapper{
+    width: 980px;
+    margin:0 auto;
+}
+.header{
+    background-color: #c0392b;
+    height: 12px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+}
+.header h1 a{
+    text-decoration: none;
+    color:#fff;
+    line-height: 12px;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.3em;
+}
+.catch{
+    height: 460px;
+    background-image: url('../images/catchbk.jpg');
+    background-repeat: repeat-x;
+    background-color: #EB1A00;
+}
+.gnavi{
+    background-color: #2c3e50;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.gnavi ul{
+    list-style: none;
+}
+.gnavi ul li{
+    height:30px;
+    float: left;
+}
+#gnavi1 a{
+    width: 124px;
+    height: 30px;
+    background-image: url('../images/btn1.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi2 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn2.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi3 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn3.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi4 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn4.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi5 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn5.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi6 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn6.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi7 a{
+    width: 122px;
+    height: 30px;
+    background-image: url('../images/btn7.png');
+    display: block;
+    text-indent: -999999px;
+}
+#gnavi8 a{
+    width: 124px;
+    height: 30px;
+    background-image: url('../images/btn8.png');
+    display: block;
+    text-indent: -999999px;
+}
+.contents{
+    clear: both;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #888;
+    margin-top: 40px;
+}
+.contents ul,.contents2 ul,.contents3 ul{
+    margin: 20px 10px 20px 30px;
+    list-style: none;
+}
+.contents ol,.contents2 ol,.contents3 ol{
+    margin: 20px 10px 20px 30px;
+    list-style-position: inside;
+}
+.contents ul li,.contents2 ul li,.contents3 ul li{
+    margin-left:30px;
+    margin-bottom: 10px;
+}
+.contents ol li,.contents2 0l li,.contents3 ol li{
+    margin-left:30px;
+    margin-bottom: 10px;
+}
+.contents h2,.contents2 h2,.contents3 h2{
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #EB1A00;
+    padding: 10px;
+}
+.contents h3{
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #EB1A00;
+    padding: 10px;
+}
+.contents2{
+    clear: both;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #888;
+
+}
+.foot{
+    text-align: center;
+    font-size: 160%;
+    font-weight: normal;
+    letter-spacing: 1.8em;
+    margin-bottom: 10px;
+    color:#EB1A00;
+}
+.contents3{
+    clear: both;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #888;
+}
+.main{
+    width: 660px;
+    margin-right: 20px;
+    float: left;
+}
+.txt{
+    line-height: 1.8em;
+    font-size: 100%;
+    padding: 15px;
+}
+.txt table{
+    width:100%;
+}
+.program{
+
+}
+.program th{
+    background-color:#ccb;
+    padding:10px;
+    margin-bottom:1px;
+}
+.program td{
+    padding:10px;
+    margin-bottom:1px;
+}
+.program p{
+    font-size: 80%;
+    padding:10px;
+}
+.program ul li{
+    font-size: 80%;
+}
+.hashtag{
+    font-size: 140%;
+    color:#003;
+}
+.side{
+    width: 300px;
+    float: left;
+}
+.footer{
+    background-color: #c0392b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear: both;
+    color:#fff;
+}
+.copyright{
+    font-size: 80%;
+    color: #fff;
+    text-align: right;
+}
+.copyright a{
+    color: #fff;
+    text-decoration: none;
+}

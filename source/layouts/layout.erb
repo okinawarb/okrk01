@@ -23,8 +23,8 @@
     <header class="header">
       <div class="wrapper"><h1><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議01</a></h1></div>
     </header>
-    <section class="catch"><div class="wrapper"><a href="http://okrk01.doorkeeper.jp/events/7599"><img src="images/catch.png" alt="参加"></a></div></section>
-    <nav class="gnavi">
+    <section class="catch" id="bg1" data-0="background-position:0% 0%;" data-end="background-position:0% 500%;"><div class="wrapper"><a href="http://okrk01.doorkeeper.jp/events/7599"><img src="images/catch.png" alt="参加"></a></div></section>
+    <nav class="gnavi" data-0="position:static;" data-top-top="position:fixed;top:0;" data-edge-strategy="set">
       <ul class="wrapper">
         <li id="gnavi1"><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議</a></li>
         <li id="gnavi2"><a href="about.html">概要</a></li>
@@ -43,6 +43,7 @@
 	</article>
 	<aside class="side">
 	  <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
+    <p align="center"><a href="access.html"><img src="images/access.png" alt="会場へのアクセス方法"></a></p>
 	  <div class="fb-like-box" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 	  <a class="twitter-timeline" href="https://twitter.com/search?q=%23okrk01" data-widget-id="424049840071258112">#okrk01 に関するツイート</a>
 	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -52,27 +53,34 @@
       </div>
     </section>
     <section class="contents2">
-      <div class="wrapper">
-	<h2 class="foot">主催</h2>
-	<article class="txt">
-          <ul style='list-style-type:none;'>
-            <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
-            <br />
-            <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
-            <br />
-            <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a>  </li>
-          </ul>
-	</article>
-	<h2 class="foot">協力</h2>
-	<article class="txt">
-          <ul style='list-style-type:none;'>
-            <li><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png"></img></a></li>
-            <br />
-            <li><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></li>
-          </ul>
-	</article>
+      <div id="bg2" data-0="background-position:0% 0%;" data-end="background-position:0% 200%;">
+        <div class="wrapper">
+        	<h2 class="foot">主催</h2>
+        	<article class="txt">
+                  <ul style='list-style-type:none;'>
+                    <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
+                    <br />
+                    <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
+                    <br />
+                    <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a>  </li>
+                  </ul>
+        	</article>
+        </div>
+      </div>
+      <div id="bg3" data-0="background-position:0% 0%;" data-end="background-position:0% 500%;">
+        <div class="wrapper">
+        	<h2 class="foot">協力</h2>
+        	<article class="txt">
+                  <ul style='list-style-type:none;'>
+                    <li><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png"></img></a></li>
+                    <br />
+                    <li><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></li>
+                  </ul>
+        	</article>
+        </div>
       </div>
     </section>
+
     <section class="contents3">
       <div class="wrapper">
 	<h2>ハッシュタグ</h2>
@@ -94,5 +102,8 @@
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1385095801711114";
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
   </body>
 </html>

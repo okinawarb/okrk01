@@ -69,9 +69,10 @@ body, .header{
 }
 nav{
     width:100%;
-    filter: alpha(opacity=80);
-    -moz-opacity:0.80;
-    opacity:0.80;
+    filter: alpha(opacity=90);
+    -moz-opacity:0.9;
+    opacity:0.9;
+    z-index: 1;
 }
 .gnavi{
     background-color: #2c3e50;
@@ -197,25 +198,24 @@ nav{
     clear: both;
     padding-bottom: 40px;
     padding-top: 40px;
-    margin-top: 40px;
 }
-.contents ul,.contents2 ul,.contents3 ul{
+.contents ul{
     margin: 20px 10px 20px 30px;
     list-style: none;
 }
-.contents ol,.contents2 ol,.contents3 ol{
+.contents ol{
     margin: 20px 10px 20px 30px;
     list-style-position: inside;
 }
-.contents ul li,.contents2 ul li,.contents3 ul li{
+.contents ul li{
     margin-left:30px;
     padding-bottom: 10px;
 }
-.contents ol li,.contents2 ol li,.contents3 ol li{
+.contents ol li{
     margin-left:30px;
     padding-bottom: 10px;
 }
-.contents h2,.contents2 h2,.contents3 h2{
+.contents h2{
     font-size: 120%;
     font-weight: normal;
     margin-bottom: 10px;
@@ -232,11 +232,6 @@ nav{
     background-color: #ccb;
     padding: 10px;
 }
-.contents2{
-    clear: both;
-    padding-top: 20px;
-    margin-top:20px;
-}
 .box{
     border: 1px solid #EB1A00;
     padding:10px;
@@ -249,11 +244,6 @@ nav{
     letter-spacing: 1.8em;
     margin-bottom: 10px;
     color:#EB1A00;
-}
-.contents3{
-    clear: both;
-    padding-bottom: 40px;
-    padding-top: 40px;
 }
 .main{
     width: 660px;

@@ -62,21 +62,24 @@
         <li id="gnavi8"><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
+    <%= yield_content :info_section %>
     <section class="contents">
       <div class="wrapper">
         <article class="main">
           <%= yield %>
-          <h2>その他</h2>
-          <div class="box">
-            <h3>ハッシュタグ</h3>
-            <article class="txt">
-              沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
-            </article>
-            <h3>お問い合わせ</h3>
-            <article class="txt">
-              沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
-            </article>
-          </div>
+          <% unless content_for? :tags_section %>
+            <h2>その他</h2>
+            <div class="box">
+              <h3>ハッシュタグ</h3>
+              <article class="txt">
+                沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
+              </article>
+              <h3>お問い合わせ</h3>
+              <article class="txt">
+                沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
+              </article>
+            </div>
+          <% end %>
         </article>
         <aside class="side">
           <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
@@ -90,7 +93,7 @@
         </aside>
       </div>
     </section>
-    <section class="contents2">
+    <section class="contents">
       <div id="bg2">
         <div class="wrapper">
         	<h2 class="foot">主催</h2>
@@ -106,6 +109,9 @@
         </div>
       </div>
     </section>
+
+    <%= yield_content :tags_section %>
+
     <footer class="footer">
       <div class="wrapper">
         <div class="copyright">Copyright(C)2014 by 沖縄Ruby会議&nbsp;/&nbsp;<%= link_to "Powered by Middleman", "http://middlemanapp.com/" %></div>

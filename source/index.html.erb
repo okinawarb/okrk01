@@ -1,6 +1,5 @@
 ---
 title: 沖縄Ruby会議 01 2014/03/01 13:00〜開催！
-layout: top
 ---
 
 <div class="welcome">
@@ -70,3 +69,45 @@ layout: top
   </ul>
   <br />
 </div><!-- .welcome -->
+
+<% content_for :info_section do %>
+  <section class="info">
+    <div class="wrapper">
+      <div class="session1">
+        ゲスト講演<h3>未定</h3>
+        <p class="speaker">by <a href="https://twitter.com/yukihiro_matz">@yukihiro_matz</a></p>
+        <p>
+          <img src="images/matz.jpg" align="right">
+          Ruby作者の「まつもとゆきひろ」氏のゲスト講演が開催されます。タイトルや内容などの詳細は近日発表！！
+        </p>
+      </div>
+      <div class="session2">
+        ゲスト講演<h3>Rubyを使って3人/日でアプリをリリースしよう</h3>
+        <p class="speaker">by <a href="https://twitter.com/masuidrive">@masuidrive</a></p>
+        <p>
+          <img src="images/masuidrive.jpg" align="right">昨年のゴールデンウィークを使って開発したMarkdown対応のオンラインメモ帳サービス"wri.pe"の開発手法について解説します。
+          「個人サービスだからと言われないものを」という想いでサーバー、設計、実装、UI、デザイン、マーケティングまで、下記の様な技術を使いほぼ一人で行いました。</p>
+      </div>
+    </div>
+  </section>
+<% end %>
+
+
+<% content_for :tags_section do %>
+  <section class="contents">
+    <div class="wrapper">
+      <div class="box1">
+        <h2>ハッシュタグ</h2>
+        <article class="txt">
+          沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
+        </article>
+      </div>
+      <div class="box1">
+        <h2>お問い合わせ</h2>
+        <article class="txt">
+          沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
+        </article>
+      </div>
+    </div>
+  </section>
+<% end %>

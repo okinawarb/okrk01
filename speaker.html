@@ -21,7 +21,9 @@
 
       <script type="text/javascript">
       $(document).ready(function(){
+        $('#bg1').css({position:'absolute',top:0});
         $('#bg1').parallax("0",-0.2);
+        $('#bg1').css({position:'',top:''});
         $('#bg2').parallax("20%",-0.6);
       })
       </script>
@@ -37,10 +39,17 @@
 
   <body class="speaker">
     <header class="header">
-      <div class="wrapper"><h1><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議01</a></h1></div>
+      <div class="wrapper">
+        <h1><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議01</a></h1>
+      </div>
     </header>
     <section class="catch" id="bg1">
-      <div class="wrapper"><a href="http://okrk01.doorkeeper.jp/events/7599"><img src="images/catch.png" alt="参加"></a></div>
+      <div class="wrapper">
+        <div class='catch-title'><img src="images/catch.png" alt="参加"></div>
+        <a href="http://okrk01.doorkeeper.jp/events/7599" class='join-button'>
+          join!
+        </a>
+      </div>
     </section>
     <nav class="gnavi">
       <ul class="wrapper">
@@ -56,7 +65,7 @@
     </nav>
     <section class="contents">
       <div class="wrapper">
-	<article class="main">
+        <article class="main">
           <div class="">
   <h2>LTスピーカー募集！</h2>
   <ul style='list-style-type:none;'>
@@ -66,17 +75,28 @@
     <li>お気軽な気持ちでご応募して頂けると幸いです。皆様のLT応募を心からお待ちしております！</li>
   </ul>
 </div>
-	</article>
-	<aside class="side">
-	  <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
-    <p align="center"><a href="access.html"><img src="images/access.png" alt="会場へのアクセス方法"></a></p>
-	  <div class="fb-like-box" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-	  <a class="twitter-timeline" href="https://twitter.com/search?q=%23okrk01" data-widget-id="424049840071258112">#okrk01 に関するツイート</a>
-	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <h4>協力</h4>
-  <p><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png" width="300"></img></a></p>
-  <p><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></p>
-	</aside>
+          <h2>その他</h2>
+          <div class="box">
+            <h3>ハッシュタグ</h3>
+            <article class="txt">
+              沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
+            </article>
+            <h3>お問い合わせ</h3>
+            <article class="txt">
+              沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
+            </article>
+          </div>
+        </article>
+        <aside class="side">
+          <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
+          <p align="center"><a href="access.html"><img src="images/access.png" alt="会場へのアクセス方法"></a></p>
+          <div class="fb-like-box" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+          <a class="twitter-timeline" href="https://twitter.com/search?q=%23okrk01" data-widget-id="424049840071258112">#okrk01 に関するツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          <h4>協力</h4>
+          <p><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png" width="300"></img></a></p>
+          <p><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></p>
+        </aside>
       </div>
     </section>
     <section class="contents2">
@@ -93,15 +113,6 @@
                   </ul>
         	</article>
         </div>
-      </div>
-    </section>
-
-    <section class="contents3">
-      <div class="wrapper">
-	<h2>ハッシュタグ</h2>
-	<article class="txt">沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。</article>
-	<h2>お問い合わせ</h2>
-	<article class="txt">沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。</article>
       </div>
     </section>
     <footer class="footer">

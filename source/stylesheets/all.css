@@ -262,3 +262,28 @@ nav{
     color: #fff;
     text-decoration: none;
 }
+
+
+.catch-title{
+    height:240px;overflow:hidden;
+}
+a.join-button{
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    line-height: 180px;
+    font-size: 24px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    color: #800;
+    text-decoration: none;
+}
+a.join-button:hover{
+    background: rgba(255,160,160,0.8);
+}
+a.join-button:active{
+    background: rgba(255,80,80,0.8);
+}

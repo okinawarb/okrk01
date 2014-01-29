@@ -72,6 +72,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
 end
+activate :livereload
 
 # You can access to '/hoge' instead of '/hoge.html'
 # Failed to images ... orz

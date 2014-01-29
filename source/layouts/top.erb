@@ -37,9 +37,14 @@
   <body class="<%= page_classes %>">
     <header class="header">
       <div class="wrapper">
-        <h1><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議01</a></h1>
+        <h1><a href="http://regional.rubykaigi.org/okrk01/">1沖縄Ruby会議01</a></h1>
       </div>
     </header>
+    <section class="catch" id="bg1">
+      <div class="wrapper">
+        <a href="http://okrk01.doorkeeper.jp/events/7599"><img src="images/catch.png" alt="参加"></a>
+      </div>
+    </section>
     <nav class="gnavi">
       <ul class="wrapper">
         <li id="gnavi1"><a href="http://regional.rubykaigi.org/okrk01/">沖縄Ruby会議</a></li>
@@ -52,21 +57,29 @@
         <li id="gnavi8"><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </nav>
+    <section class="info">
+      <div class="wrapper">
+        <div class="session1">
+          ゲスト講演<h3>未定</h3>
+          <p class="speaker">by <a href="https://twitter.com/yukihiro_matz">@yukihiro_matz</a></p>
+          <p>
+            <img src="images/matz.jpg" align="right">
+            Ruby作者の「まつもとゆきひろ」氏のゲスト講演が開催されます。タイトルや内容などの詳細は近日発表！！
+          </p>
+        </div>
+        <div class="session2">
+          ゲスト講演<h3>Rubyを使って3人/日でアプリをリリースしよう</h3>
+          <p class="speaker">by <a href="https://twitter.com/masuidrive">@masuidrive</a></p>
+          <p>
+            <img src="images/masuidrive.jpg" align="right">昨年のゴールデンウィークを使って開発したMarkdown対応のオンラインメモ帳サービス"wri.pe"の開発手法について解説します。
+            「個人サービスだからと言われないものを」という想いでサーバー、設計、実装、UI、デザイン、マーケティングまで、下記の様な技術を使いほぼ一人で行いました。</p>
+        </div>
+      </div>
+    </section>
     <section class="contents">
       <div class="wrapper">
         <article class="main">
           <%= yield %>
-          <h2>その他</h2>
-          <div class="box">
-            <h3>ハッシュタグ</h3>
-            <article class="txt">
-              沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
-            </article>
-            <h3>お問い合わせ</h3>
-            <article class="txt">
-              沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
-            </article>
-          </div>
         </article>
         <aside class="side">
           <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
@@ -83,8 +96,8 @@
     <section class="contents2">
       <div id="bg2">
         <div class="wrapper">
-        	<h2 class="foot">主催</h2>
-        	<article class="txt">
+          <h2 class="foot">主催</h2>
+          <article class="txt">
                   <ul style='list-style-type:none;'>
                     <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
                     <br />
@@ -92,7 +105,24 @@
                     <br />
                     <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a>  </li>
                   </ul>
-        	</article>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contents3">
+      <div class="wrapper">
+        <div class="box1">
+          <h2>ハッシュタグ</h2>
+          <article class="txt">
+            沖縄Ruby会議01ではtwitterのハッシュタグには「<a href="https://twitter.com/search?q=%23okrk01&src=typd&f=realtime"><span class="hashtag">#okrk01</span></a>」を利用しています。イベント開催前〜イベント中の会場からなど、このハッシュタグを利用してつぶやいてください。
+          </article>
+        </div>
+        <div class="box1">
+          <h2>お問い合わせ</h2>
+          <article class="txt">
+            沖縄Ruby会議に関するお問い合わせは<a href="contact.html">コチラ</a>からお願いします。
+          </article>
         </div>
       </div>
     </section>

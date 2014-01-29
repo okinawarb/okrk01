@@ -72,3 +72,9 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
 end
+
+# You can access to '/hoge' instead of '/hoge.html'
+# Failed to images ... orz
+# Need to configure.
+#activate :directory_indexes
+

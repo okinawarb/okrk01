@@ -27,7 +27,7 @@ body {
 #bg1{
     background-image: url('../images/okinawa_rb_5.png');
     background-repeat: repeat-y;
-    background-size:100% 100%;
+    background-size: cover;
     z-index:1;
     width:100%;
     height:500px;
@@ -43,6 +43,9 @@ body {
 .wrapper{
     width: 980px;
     margin:0 auto;
+}
+body, .header{
+    min-width: 980px;
 }
 .header{
     background-color: #c0392b;

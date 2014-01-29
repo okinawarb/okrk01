@@ -72,3 +72,7 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
 end
+
+# You can access to '/hoge' instead of '/hoge.html' 
+activate :directory_indexes
+

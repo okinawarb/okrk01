@@ -291,10 +291,63 @@ a.join-button{
     border-radius: 50%;
     color: #800;
     text-decoration: none;
+    position: relative;
+    -webkit-transition: background 0.25s;
+    -moz-transition: background 0.25s;
+    -o-transition: background 0.25s;
+    transition: background 0.25s;
 }
 a.join-button:hover{
     background: rgba(255,160,160,0.8);
 }
 a.join-button:active{
     background: rgba(255,80,80,0.8);
+}
+
+
+a.join-button:before, a.join-button:after{
+    content: '';
+    opacity: 0;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    -webkit-transition: border-color 0.25s;
+    -moz-transition: border-color 0.25s;
+    -o-transition: border-color 0.25s;
+    transition: border-color 0.25s;
+}
+a.join-button:hover:before, a.join-button:hover:after{
+    border-color: red;
+}
+a.join-button:before{
+    -webkit-animation: button-animation 2s linear 0 infinite;
+    -moz-animation: button-animation 2s linear 0 infinite;
+    -o-animation: button-animation 2s linear 0 infinite;
+    animation: button-animation 2s linear 0 infinite;
+}
+a.join-button:after{
+    -webkit-animation: button-animation 2s linear 1s infinite;
+    -moz-animation: button-animation 2s linear 1s infinite;
+    -o-animation: button-animation 2s linear 1s infinite;
+    animation: button-animation 2s linear 1s infinite;
+}
+@-webkit-keyframes button-animation{
+    0% {left: -2px; top: -2px; width: 180px; height: 180px; opacity: 0;}
+    20% {left: -12px; top: -12px; width: 200px; height: 200px; opacity: 0.5;}
+    100% {left: -52px; top: -52px; width: 280px; height: 280px; opacity: 0;}
+}
+@-moz-keyframes button-animation{
+    0% {left: -2px; top: -2px; width: 180px; height: 180px; opacity: 0;}
+    20% {left: -12px; top: -12px; width: 200px; height: 200px; opacity: 0.5;}
+    100% {left: -52px; top: -52px; width: 280px; height: 280px; opacity: 0;}
+}
+@-o-keyframes button-animation{
+    0% {left: -2px; top: -2px; width: 180px; height: 180px; opacity: 0;}
+    20% {left: -12px; top: -12px; width: 200px; height: 200px; opacity: 0.5;}
+    100% {left: -52px; top: -52px; width: 280px; height: 280px; opacity: 0;}
+}
+@keyframes button-animation{
+    0% {left: -2px; top: -2px; width: 180px; height: 180px; opacity: 0;}
+    20% {left: -12px; top: -12px; width: 200px; height: 200px; opacity: 0.5;}
+    100% {left: -52px; top: -52px; width: 280px; height: 280px; opacity: 0;}
 }

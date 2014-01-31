@@ -75,7 +75,11 @@ end
 activate :livereload
 
 # You can access to '/hoge' instead of '/hoge.html'
-# Failed to images ... orz
+# Failed to load images ... orz
 # Need to configure.
 #activate :directory_indexes
+
+configure :development do
+  activate :directory_indexes
+end
 

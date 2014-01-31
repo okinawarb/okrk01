@@ -286,10 +286,11 @@ a.join-button{
     width: 180px;
     height: 180px;
     line-height: 180px;
-    font-size: 24px;
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
     background: rgba(255,255,255,0.6);
     border-radius: 50%;
-    color: #800;
+    color: rgba(192,57,43,0.8);
     text-decoration: none;
     position: relative;
     -webkit-transition: background 0.25s;
@@ -298,10 +299,14 @@ a.join-button{
     transition: background 0.25s;
 }
 a.join-button:hover{
-    background: rgba(255,160,160,0.8);
+//    background: rgba(255,160,160,0.8);
+//    background: rgba(164,197,196,0.8);
+    background: rgba(120,220,220,0.8);
+//    background: cyan;
 }
 a.join-button:active{
-    background: rgba(255,80,80,0.8);
+//    background: rgba(255,80,80,0.8);
+    background: rgba(2,92,140,0.8);
 }
 
 
@@ -317,7 +322,7 @@ a.join-button:before, a.join-button:after{
     transition: border-color 0.25s;
 }
 a.join-button:hover:before, a.join-button:hover:after{
-    border-color: red;
+    border-color: cyan;
 }
 a.join-button:before{
     -webkit-animation: button-animation 2s linear 0 infinite;

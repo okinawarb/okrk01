@@ -63,9 +63,6 @@ body, .header{
 }
 .catch{
     height: 460px;
-    background-image: url('../images/catchbk.jpg');
-    background-repeat: repeat-x;
-    background-color: #EB1A00;
 }
 nav{
     width:100%;

@@ -26,7 +26,7 @@ body {
 }
 #bg1{
     background-image: url('../images/okinawa_rb_5.png');
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
     z-index:1;
     width:100%;
@@ -52,6 +52,7 @@ body, .header{
     height: 12px;
     padding-top: 0px;
     padding-bottom: 15px;
+    position: relative;
 }
 .header h1 a{
     text-decoration: none;
@@ -63,6 +64,7 @@ body, .header{
 }
 .catch{
     height: 460px;
+    margin-top: -8px;
 }
 nav{
     width:100%;

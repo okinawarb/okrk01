@@ -26,7 +26,7 @@ body {
 }
 #bg1{
     background-image: url('../images/okinawa_rb_5.png');
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
     z-index:1;
     width:100%;
@@ -52,6 +52,7 @@ body, .header{
     height: 12px;
     padding-top: 0px;
     padding-bottom: 15px;
+    position: relative;
 }
 .header h1 a{
     text-decoration: none;
@@ -63,9 +64,7 @@ body, .header{
 }
 .catch{
     height: 460px;
-    background-image: url('../images/catchbk.jpg');
-    background-repeat: repeat-x;
-    background-color: #EB1A00;
+    margin-top: -8px;
 }
 nav{
     width:100%;
@@ -108,7 +107,7 @@ nav{
     padding-bottom: 40px;
     padding-top: 40px;
 }
-.session1{
+.session{
     width:440px;
     float:left;
     margin-right:20px;
@@ -117,35 +116,30 @@ nav{
     padding:20px;
     color:#eee;
 }
-.session2{
-    width:440px;
-    float:left;
-    display:block;
-    background-color: #e88;
-    padding:20px;
-    color:#eee;
+.session:last-child{
+    margin-right:0;
 }
-.session1 h3,.session2 h3{
+.session h3{
     color:#fff;
     padding:5px;
     border-bottom: 1px solid #eee;
 }
-.session1 p,.session2 p{
+.session p{
     color:#eee;
     font-size: 90%;
     padding:5px;
 }
-.session1 ul,.session2 ul{
+.session ul{
     color:#eee;
     font-size: 80%;
     padding:5px;
 }
-.session1 ul li,.session2 ul li{
+.session ul li{
     color:#eee;
     font-size: 80%;
     margin-left:20px;
 }
-.session1 img,.session2 img{
+.session img{
     width:100px;
     padding:10px;
 }

@@ -2,6 +2,7 @@
 //= require_tree ./bootstrap
 //= require_tree .
 
+//nav固定
 $(function(){
   var defaultTop=$('.gnavi').position().top;
   hoge = $('<div>');
@@ -18,4 +19,19 @@ $(function(){
   }
   $(document).scroll(onscroll);
   onscroll();
+})
+
+//ゲスト講演高さ揃え
+$(function(){
+  function fix(){
+    $('.session').css({height:''});
+    var max=0;
+    $('.session').each(function(){
+      var h=$(this).height();
+      if(max<h)max=h;
+    });
+    $('.session').css({height:max});
+  }
+  fix();
+  $(window).resize(fix);
 })

@@ -24,13 +24,13 @@ $(function(){
 //ゲスト講演高さ揃え
 $(function(){
   function fix(){
-    $('.session').css({height:''});
+    $('.session').css({'min-height':''});
     var max=0;
     $('.session').each(function(){
       var h=$(this).height();
       if(max<h)max=h;
     });
-    $('.session').css({height:max});
+    $('.session').css({'min-height':max});
   }
   fix();
   $(window).resize(fix);

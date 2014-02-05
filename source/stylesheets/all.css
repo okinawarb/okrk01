@@ -89,6 +89,7 @@ nav{
     list-style: none;
 }
 .gnavi ul li a{
+    width: 122px;
     height:70px;
     float: left;
     white-space: nowrap;
@@ -99,9 +100,21 @@ nav{
     text-decoration: none;
     display: block;
 }
+.gnavi ul li:first-child a, .gnavi ul li:last-child a{width: 124px;}
 .gnavi ul li a:hover{
     background-color: #234;
 }
+.page-index .nav-index,
+.page-about .nav-about,
+.page-mission .nav-mission,
+.page-program .nav-program,
+.page-speaker .nav-speaker,
+.page-entry .nav-entry,
+.page-faq .nav-faq,
+.page-contact .nav-contact{
+    background-color: #123;
+}
+
 .info{
     clear:both;
     padding-bottom: 40px;

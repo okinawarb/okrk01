@@ -35,3 +35,12 @@ $(function(){
   fix();
   $(window).resize(fix);
 })
+
+$(function(){
+  var a = $('[data-ust-replace]');
+  if(new Date()>new Date('Mar 01 2014 12:00:00 GMT+0900')){
+    var parent=a.parent();
+    a.remove();
+    parent.append($('<div>').html(a.data('ust-replace')))
+  }
+})

@@ -24,8 +24,10 @@
         $('#bg1').css({position:'absolute',top:0});
         $('#bg1').parallax("0",-0.2);
         $('#bg1').css({position:'',top:''});
-        $('#bg2').parallax("20%",-0.6);
       })
+      $(window).load(function(){
+        $('#bg2').parallax("20%",-0.6);
+      });
       </script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,7 +47,7 @@
     </header>
     <section class="catch" id="bg1">
       <div class="wrapper">
-        <div class='catch-title'><img src="images/catch.png" alt="参加"></div>
+        <div class='catch-title'><img src="images/catch.png" alt="参加" width="980px" height="460px"></div>
         <a href="http://okrk01.doorkeeper.jp/events/7599" class='join-button' data-ust-replace='<iframe width="360" height="234" src="http://www.ustream.tv/embed/17337824?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;display:block;margin: 0 auto;"></iframe>'>
           Join!
         </a>
@@ -116,35 +118,35 @@
         <aside class="side">
           <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
           <p align="center"><a href="access"><img src="images/access.png" alt="会場へのアクセス方法"></a></p>
-          <div class="fb-like-box" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+          <div class="fb-like-box" style="height:241px;" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 
-	  <a class="twitter-timeline"
-	     href="https://twitter.com/search?q=%22okrk01%22+OR+%E6%B2%96%E7%B8%84Ruby%E4%BC%9A%E8%AD%B0"
-	     data-widget-id="429810440613294080">沖縄Ruby会議に関するツイート</a>
-	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	  
+          <a class="twitter-timeline"
+             href="https://twitter.com/search?q=%22okrk01%22+OR+%E6%B2%96%E7%B8%84Ruby%E4%BC%9A%E8%AD%B0"
+             data-widget-id="429810440613294080">沖縄Ruby会議に関するツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
           <h4>協力</h4>
           <p><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png" width="300"></img></a></p>
           <p><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></p>
-	  <p><a href="http://lexues.co.jp/"><img src="images/lexues-logo.png" width="300px" ></img></a></p>
-	  <p><a href="http://forum.mruby.org/"><img src="images/mrubyforum-logo.png" width="300px" ></img></a></p>
-	  <p><a href="https://webpay.jp/"><img src="images/webpay-logo.png" width="300px" ></img></a></p>
+          <p><a href="http://lexues.co.jp/"><img src="images/lexues-logo.png" width="300px" ></img></a></p>
+          <p><a href="http://forum.mruby.org/"><img src="images/mrubyforum-logo.png" width="300px" ></img></a></p>
+          <p><a href="https://webpay.jp/"><img src="images/webpay-logo.png" width="300px" ></img></a></p>
         </aside>
       </div>
     </section>
     <section class="contents">
       <div id="bg2">
         <div class="wrapper">
-        	<h2 class="foot">主催</h2>
-        	<article class="txt">
-                  <ul style='list-style-type:none;'>
-                    <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
-                    <br />
-                    <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
-                    <br />
-                    <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a></li>
-                  </ul>
-        	</article>
+          <h2 class="foot">主催</h2>
+          <article class="txt">
+            <ul style='list-style-type:none;'>
+              <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
+              <br />
+              <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
+              <br />
+              <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>

@@ -24,8 +24,10 @@
         $('#bg1').css({position:'absolute',top:0});
         $('#bg1').parallax("0",-0.2);
         $('#bg1').css({position:'',top:''});
-        $('#bg2').parallax("20%",-0.6);
       })
+      $(window).load(function(){
+        $('#bg2').parallax("20%",-0.6);
+      });
       </script>
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,7 +47,7 @@
     </header>
     <section class="catch" id="bg1">
       <div class="wrapper">
-        <div class='catch-title'><img src="images/catch.png" alt="参加"></div>
+        <div class='catch-title'><img src="images/catch.png" alt="参加" width="980px" height="460px"></div>
         <a href="http://okrk01.doorkeeper.jp/events/7599" class='join-button' data-ust-replace='<iframe width="360" height="234" src="http://www.ustream.tv/embed/17337824?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;display:block;margin: 0 auto;"></iframe>'>
           Join!
         </a>
@@ -90,20 +92,20 @@
       <tr>
         <th>13:50</th>
         <td>ゲスト講演&nbsp;<strong>「Rubyを使って3人/日でアプリをリリースしよう」</strong><br />by <a href="http://twitter.com/masuidrive">@masuidrive</a>
-	  <p>昨年のゴールデンウィークを使って開発したMarkdown対応のオンラインメモ帳サービス"wri.pe"の開発手法について解説します。</p>
-	  <p>「個人サービスだからと言われないものを」という想いでサーバー、設計、実装、UI、デザイン、マーケティングまで、下記の様な技術を使いほぼ一人で行いました。</p>
-	  <p>
-	    この中に一つでも興味のあるものが、あれば聞きにきてみませんか？
-	    <ul>
-	      <li>Rails4.0 + Ruby2.0</li>
-	      <li>Heroku</li>
-	      <li>Capybara + RSpecを使った自動テスト</li>
-	      <li>Backbone.js</li>
-	      <li>HTML5 AppCache + Storage</li>
-	      <li>Google App Script</li>
-	      <li>Analytics Measure API</li>
-	    </ul>
-	  </p></td>
+          <p>昨年のゴールデンウィークを使って開発したMarkdown対応のオンラインメモ帳サービス"wri.pe"の開発手法について解説します。</p>
+          <p>「個人サービスだからと言われないものを」という想いでサーバー、設計、実装、UI、デザイン、マーケティングまで、下記の様な技術を使いほぼ一人で行いました。</p>
+          <p>
+            この中に一つでも興味のあるものが、あれば聞きにきてみませんか？
+            <ul>
+              <li>Rails4.0 + Ruby2.0</li>
+              <li>Heroku</li>
+              <li>Capybara + RSpecを使った自動テスト</li>
+              <li>Backbone.js</li>
+              <li>HTML5 AppCache + Storage</li>
+              <li>Google App Script</li>
+              <li>Analytics Measure API</li>
+            </ul>
+          </p></td>
       </tr>
       <tr>
         <th>休憩</th>
@@ -114,7 +116,7 @@
           <ul>
             <li>「Rubyによるバッチ業務のストリーム処理化の設計と実装」<a href="http://twitter.com/bash0C7">@bash0C7</a></li>
             <li>「Emacsの普通の使い方」<a href="http://twitter.com/libkinjo">@libkinjo</a></li>
-	    <li>「<a href="http://www.ryukyu-frogs.com/">RyukyuFrogs</a>と<a href="http://academy.lexues.co.jp/">Lexues Academy</a>の話」<a href="http://lexues.co.jp/">株式会社レキサス</a></li>
+            <li>「<a href="http://www.ryukyu-frogs.com/">RyukyuFrogs</a>と<a href="http://academy.lexues.co.jp/">Lexues Academy</a>の話」<a href="http://lexues.co.jp/">株式会社レキサス</a></li>
           </ul>
         </td>
       </tr>
@@ -130,7 +132,7 @@
             <li>「<a href="http://qwik.jp/okinawarb/">Okinawa.rb</a>」<a href="http://twitter.com/yasulab">@yasulab</a></li>
             <li>「<a href="http://hackers-champloo.org/">Hackers Champloo</a>」<a href="http://twitter.com/k_nishijima">@k_nishijima</a></li>
             <li>「<a href="http://text.geeoki.com/">ギークハウス沖縄</a>」<a href="http://twitter.com/kimihito_">@kimihito_</a></li>
-	    <li>「<a href="http://gfab-okinawa.github.io/">gFab</a>」<a href="http://twitter.com/nanophate">@nanophate</a></li>
+            <li>「<a href="http://gfab-okinawa.github.io/">gFab</a>」<a href="http://twitter.com/nanophate">@nanophate</a></li>
           </ul>
         </td>
       </tr>
@@ -143,7 +145,7 @@
           <ul>
             <li>「rcairoでものづくり」<a href="http://twitter.com/mgwsuzuki">@mgwsuzuki</a></li>
             <li>「Rubyに何かをしゃべらせる」<a href="http://www.linkedin.com/pub/yoichi-kobayashi/89/205/461">Yoichi Kobayashi</a></li>
-	    <li>「組み込みにもiOSにもrubyで幸せ（仮）」<a href="https://twitter.com/shumach217">@shumach217</a></li> 
+            <li>「組み込みにもiOSにもrubyで幸せ（仮）」<a href="https://twitter.com/shumach217">@shumach217</a></li>
           </ul>
         </td>
       </tr>
@@ -151,9 +153,9 @@
         <th>16:10</th>
         <td><strong>Lightning Talks 2.5 + Sponsored Session (各5分)</strong>
           <ul>
-	    <li>「きたのくにからこんにちぬー！」<a href="https://twitter.com/PUPRL">@PUPRL</a></li>
-	    <li>「The Payment System by Ruby」<a href="https://webpay.jp/">WebPay株式会社</a></li>
-	  </ul>
+            <li>「きたのくにからこんにちぬー！」<a href="https://twitter.com/PUPRL">@PUPRL</a></li>
+            <li>「The Payment System by Ruby」<a href="https://webpay.jp/">WebPay株式会社</a></li>
+          </ul>
         </td>
       </tr>
       <tr>
@@ -162,26 +164,26 @@
       <tr>
         <th>16:30</th>
         <td><strong>Lightning Talks 学生枠 (各5分)</strong>
-	  <ul>
-	    <li>「This is a SharePla」<a href="http://twitter.com/kanpe777">@kanpe777</a>, <a href="http://twitter.com/salvare234">@salvare234</a></li>
-	    <li>「琉大図書館にRuby本を！」<a href="http://twitter.com/_simanman">@_simanman</a></li>
+          <ul>
+            <li>「This is a SharePla」<a href="http://twitter.com/kanpe777">@kanpe777</a>, <a href="http://twitter.com/salvare234">@salvare234</a></li>
+            <li>「琉大図書館にRuby本を！」<a href="http://twitter.com/_simanman">@_simanman</a></li>
             <li>「#MacFriends: Macの背面にステッカーを貼るヤツちょっとこい」<a href="http://twitter.com/enkw_">@enkw_</a></li>
             <li>「Square your Instagram」<a href="http://twitter.com/nanophate">@nanophate</a></li>
-	    <li>「Rubyがモデリングをする時代」<a href="https://twitter.com/motikan2010">@motikan2010</a></li>
+            <li>「Rubyがモデリングをする時代」<a href="https://twitter.com/motikan2010">@motikan2010</a></li>
           </ul>
-	</td>
+        </td>
       </tr>
       <tr>
         <th>16:55</th>
-	<td><strong>Lightning Talks 3 (各5分) </strong>
-	  <ul>
-	    <li>「RubyKaigiの話」<a href="http://twitter.com/kakutani">@kakutani</a></li>
-	    <li>「るびまの話」<a href="http://twitter.com/gunjisatoshi">@gunjisatoshi</a></li>
-	    <li>「1 個の Pull Request の Diff を 200 行以下にしたら捗った話」<a href="http://twitter.com/kbaba1001">@kbaba1001</a></li>
-	    <li>「カスタムマッチャーを流行らせたい (仮)」<a href="http://twitter.com/moro">@moro</a></li>
-	    <li>「※ タイトル未定」<a href="http://twitter.com/ayumin">@ayumin</a></li>
-	  </ul>
-	</td>
+        <td><strong>Lightning Talks 3 (各5分) </strong>
+          <ul>
+            <li>「RubyKaigiの話」<a href="http://twitter.com/kakutani">@kakutani</a></li>
+            <li>「るびまの話」<a href="http://twitter.com/gunjisatoshi">@gunjisatoshi</a></li>
+            <li>「1 個の Pull Request の Diff を 200 行以下にしたら捗った話」<a href="http://twitter.com/kbaba1001">@kbaba1001</a></li>
+            <li>「カスタムマッチャーを流行らせたい (仮)」<a href="http://twitter.com/moro">@moro</a></li>
+            <li>「※ タイトル未定」<a href="http://twitter.com/ayumin">@ayumin</a></li>
+          </ul>
+        </td>
       </tr>
       <tr>
         <th>休憩</th>
@@ -189,12 +191,12 @@
       <tr>
         <th>17:30</th>
         <td>ゲスト講演&nbsp;<strong>「mrubyについて (仮)」</strong><br />by <a href="http://www.kyutech.ac.jp/professors/iizuka/i4/i4-2/entry-714.html">田中 和明 准教授</a> (九州工業大学)
-	  <p></p></td>
+          <p></p></td>
       </tr>
       
       <tr>
         <th>18:00</th>
-	<td>閉会&nbsp; by <a href="http://twitter.com/yasulab">@yasulab</a></td>
+        <td>閉会&nbsp; by <a href="http://twitter.com/yasulab">@yasulab</a></td>
       </tr>
     </table>
 
@@ -221,35 +223,35 @@
         <aside class="side">
           <a class="doorkeeper-registration-widget" href="http://okrk01.doorkeeper.jp/events/7599">沖縄Ruby会議01</a><script src="http://widgets.doorkeeper.jp/w/widget.js"></script>
           <p align="center"><a href="access"><img src="images/access.png" alt="会場へのアクセス方法"></a></p>
-          <div class="fb-like-box" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+          <div class="fb-like-box" style="height:241px;" data-href="https://www.facebook.com/okinawa.rubykaigi" data-width="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 
-	  <a class="twitter-timeline"
-	     href="https://twitter.com/search?q=%22okrk01%22+OR+%E6%B2%96%E7%B8%84Ruby%E4%BC%9A%E8%AD%B0"
-	     data-widget-id="429810440613294080">沖縄Ruby会議に関するツイート</a>
-	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	  
+          <a class="twitter-timeline"
+             href="https://twitter.com/search?q=%22okrk01%22+OR+%E6%B2%96%E7%B8%84Ruby%E4%BC%9A%E8%AD%B0"
+             data-widget-id="429810440613294080">沖縄Ruby会議に関するツイート</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
           <h4>協力</h4>
           <p><a href="http://ruby-no-kai.org/"><img src="images/ruby-no-kai-logo.png" width="300"></img></a></p>
           <p><a href="http://text.geeoki.com/"><img src="images/geeoki-logo.png" width="300px" ></img></a></p>
-	  <p><a href="http://lexues.co.jp/"><img src="images/lexues-logo.png" width="300px" ></img></a></p>
-	  <p><a href="http://forum.mruby.org/"><img src="images/mrubyforum-logo.png" width="300px" ></img></a></p>
-	  <p><a href="https://webpay.jp/"><img src="images/webpay-logo.png" width="300px" ></img></a></p>
+          <p><a href="http://lexues.co.jp/"><img src="images/lexues-logo.png" width="300px" ></img></a></p>
+          <p><a href="http://forum.mruby.org/"><img src="images/mrubyforum-logo.png" width="300px" ></img></a></p>
+          <p><a href="https://webpay.jp/"><img src="images/webpay-logo.png" width="300px" ></img></a></p>
         </aside>
       </div>
     </section>
     <section class="contents">
       <div id="bg2">
         <div class="wrapper">
-        	<h2 class="foot">主催</h2>
-        	<article class="txt">
-                  <ul style='list-style-type:none;'>
-                    <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
-                    <br />
-                    <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
-                    <br />
-                    <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a></li>
-                  </ul>
-        	</article>
+          <h2 class="foot">主催</h2>
+          <article class="txt">
+            <ul style='list-style-type:none;'>
+              <li><a href="http://qwik.jp/okinawarb/"><img src="images/okinawarb-logo.png"></img></a></li>
+              <br />
+              <li><a href="https://www.facebook.com/groups/ruby.okinawa/"><img src="images/ryukyurb-logo.png"></img></a></li>
+              <br />
+              <li><a href="http://lingr.com/room/ryudairb"><img src="images/ryudairb-logo.png"></img></a></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>

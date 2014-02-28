@@ -19,7 +19,7 @@ $(function(){
   }
   $(document).scroll(onscroll);
   onscroll();
-})
+});
 
 //ゲスト講演高さ揃え
 $(function(){
@@ -34,7 +34,7 @@ $(function(){
   }
   fix();
   $(window).resize(fix);
-})
+});
 
 $(function(){
   var a = $('[data-ust-replace]');
@@ -43,4 +43,4 @@ $(function(){
     a.remove();
     parent.append($('<div>').html(a.data('ust-replace')))
   }
-})
+});

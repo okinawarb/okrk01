@@ -14,6 +14,9 @@ bundle install
 bundle exec middleman server
 ```
 
+ハロー
+フォークのし直しなしでできます・・・
+
 ## デプロイ方法
 
 `実行方法` を参考にして、`/source` 以下の HTML/CSS ファイル等を変更/修正し
